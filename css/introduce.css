@@ -1,16 +1,8 @@
-HTML  CSS  JS Result
-EDIT ON
- *{
-  margin:0;
-}
-#slide{
-  width:100%;
-  position:relative;
-} 
-#slide img{
-   position: absolute;
-   left:0;
-   top:0;
-   width: 100%;
-   height: auto;
+.first-introduce{
+    text-align:center;
+    
+    
+}    
+#telltell{
+    margin-left:73px;
 }
