@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>有限会社　国晃</title>
+        <meta name="description" content="有限会社国晃です。静岡浜松で「職人集団」による精密板金・各種制御盤の板金加工、塗装をしています。">
+        <meta name="keywords" content="精密板金,板金加工,塗装,静岡,浜松,職人,オーダーメイド">
+    	<link href="css/header.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+(function($){
+        $(function(){
+        var setImg = '#viewer';
+        var fadeSpeed = 1500;
+        var switchDelay = 5000;
+     
+        $(setImg).children('img').css({opacity:'0'});
+        $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
+     
+        setInterval(function(){
+            $(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+        },switchDelay);
+    });
+        	});
+    </script>
+    </head>
+    
+    <body>
+        <header>
+            <img src="images/header/kokukou_logo.png" alt="logo">
+            <div id="menu">
+            <ul>
+                <li>
+                    <a href="top.html">トップページ</a>
+                </li>
+                <li>
+                    <a href="#">製品紹介</a>
+                </li>
+                <li>
+                    <a href="#">設備紹介</a>
+                </li>
+                <li>
+                    <a href="#">採用情報</a>
+                </li>
+                <li>
+                    <a href="#">お問い合わせ</a>
+                </li>
+            </ul>
+            </div>
+        </header>
+        <div id="slideShow">
+              <img src="images/top/simo.png" alt="">
+              <img src="images/top/nambu.png" alt="">
+              <img src="images/top/nabe.png" alt="">
+        </div>      
+    </body>
+</html>

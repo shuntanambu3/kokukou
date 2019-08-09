@@ -4,10 +4,30 @@
         <meta charset="utf-8">
         <title>有限会社　国晃</title>
         <meta name="description" content="有限会社国晃です。静岡浜松で「職人集団」による精密板金・各種制御盤の板金加工、塗装をしています。">
-        <meta name="keywords" content="精密板金,板金加工,塗装,静岡,浜松,職人">
+        <meta name="keywords" content="精密板金,板金加工,塗装,静岡,浜松,職人,オーダーメイド">
     	<link href="css/header.css" rel="stylesheet">
-    	<link href="css/swiper.css" rel="stylesheet">
-        <script src="js/swiper.js"></script>
+    	<link href="css/top.css" rel="stylesheet">
+    	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    	<script>
+    	(function($){
+            $(function() {
+                 
+                var imgBox = $('#slideShow');
+                var fadeSpeed = 1000;
+                var switchDelay = 3000;
+                 
+                imgBox.find('img').hide();
+                imgBox.find('img:first').stop().fadeIn(fadeSpeed);
+             
+                setInterval(function(){
+                    imgBox.find('img:first-child').fadeOut(fadeSpeed)
+                    .next('img').fadeIn(fadeSpeed)
+                    .end().appendTo(imgBox);
+                },switchDelay);
+                 
+            });
+})(jQuery);
+       </script>
     </head>
     <body>
         <header>
@@ -32,10 +52,10 @@
             </ul>
             </div>
         </header>
-        <div class="main">
-          <section class="section page1"><h2><img src="images/top/item1.png.jpg"></h2></section>
-          <section class="section page2"><h2><img src="images/top/item2.png.JPG"></h2></section>
-          <section class="section page3"><h2><img src="images/top/item3.png.jpg"></h2></section>
-        </div>
+        <div id="slideShow">
+              <img src="images/top/simo.png" alt="">
+              <img src="images/top/nambu.png" alt="">
+              <img src="images/top/nabe.png" alt="">
+        </div>      
     </body>
 </html>
