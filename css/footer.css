@@ -1,0 +1,24 @@
+footer{
+    margin-top:10px;
+    padding:10px;
+    background: linear-gradient(#05FBFF, #c71585 ) fixed;
+}
+
+.container{
+    display:flex;
+}
+
+.footer-column{
+    width:33%;
+    color:#FFFFFF;
+}
+
+.foot_navi{
+    list-style:none;
+}
+
+.foot_navi a{
+    text-decoration:none;
+    font-size: 14px;
+    color: #FFFFFF;
+}

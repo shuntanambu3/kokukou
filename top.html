@@ -7,26 +7,27 @@
         <meta name="keywords" content="精密板金,板金加工,塗装,静岡,浜松,職人,オーダーメイド">
     	<link href="css/header.css" rel="stylesheet">
     	<link href="css/top.css" rel="stylesheet">
+    	<link href="css/footer.css" rel="stylesheet">
     	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     	<script>
     	(function($){
             $(function() {
                  
                 var imgBox = $('#slideShow');
-                var fadeSpeed = 1000;
+                var fadeSpeed = 3000;
                 var switchDelay = 3000;
                  
                 imgBox.find('img').hide();
                 imgBox.find('img:first').stop().fadeIn(fadeSpeed);
              
                 setInterval(function(){
-                    imgBox.find('img:first-child').fadeOut(fadeSpeed)
+                    imgBox.find('img:first-child').hide()
                     .next('img').fadeIn(fadeSpeed)
                     .end().appendTo(imgBox);
                 },switchDelay);
                  
             });
-})(jQuery);
+           })(jQuery);
        </script>
     </head>
     <body>
@@ -57,5 +58,33 @@
               <img src="images/top/nambu.png" alt="">
               <img src="images/top/nabe.png" alt="">
         </div>      
+        <footer>
+            <div class="container">
+            <div class="footer-column">
+             有限会社　国晃</br>
+             <div class="footer-addres">
+                 本社工場 〒433-8113</br>
+                 浜松市中区小豆餅一丁目6番3号</br>
+                 
+                 第2工場  〒433-8113</br>
+                 浜松市中区小豆餅四丁目7番4号</br>
+             </div>
+            </div>
+            <div class="footer-column">
+                お気軽にお問い合わせください。</br>
+                ☎　　１１１ー１１１１</br>
+                （平日１０：００～１８：００）</br>
+                fax　 １１１ー１１１１</br>
+            </div> 
+            <div class="footer-column">
+                <ul class="foot_navi">
+                  <li><a href="top.html">トップページ</a></li>
+                  <li><a href="introduce.html">製品紹介</a></li>
+                  <li><a href="company.html">設備紹介</a></li>
+                  <li><a href="company.html">お問い合わせ</a></li>
+                </ul>
+            </div>
+            </div>
+            <p class="copy">copyright (C) SampleCompany all rights reserved.</p>
     </body>
 </html>
